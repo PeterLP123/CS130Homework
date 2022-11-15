@@ -9,9 +9,9 @@ WHERE listingdate = '2017-10-13'
 OR listingdate = '2017-10-14';`<br/>
 
     `UPDATE cs130_lab7_property
-SET listingdate = '2017-10-15'
-WHERE listingdate = '2017-10-13'
-OR listingdate = '2017-10-14';`
+    SET listingdate = '2017-10-15'
+    WHERE listingdate = '2017-10-13'
+    OR listingdate = '2017-10-14';`
 
 ### Question 2:
 - 58 rows affected
