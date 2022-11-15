@@ -3,10 +3,10 @@
 ### Question 1:
 - 191 rows affected 
 <br />
-`SELECT *
-FROM cs130_lab7_property
-WHERE listingdate = '2017-10-13'
-OR listingdate = '2017-10-14';`<br/>
+    `SELECT *
+    FROM cs130_lab7_property
+    WHERE listingdate = '2017-10-13'
+    OR listingdate = '2017-10-14';`<br/>
 
     `UPDATE cs130_lab7_property
     SET listingdate = '2017-10-15'
@@ -16,30 +16,30 @@ OR listingdate = '2017-10-14';`<br/>
 ### Question 2:
 - 58 rows affected
 <br/>
-`SELECT *
-FROM cs130_lab7_property
-WHERE askingprice < 100000
-AND askingprice > 95000;`
+    `SELECT *
+    FROM cs130_lab7_property
+    WHERE askingprice < 100000
+    AND askingprice > 95000;`
 
 ### Question 3:
 - 45 rows affected
 <br/>
-`SELECT *
-FROM cs130_lab7_property
-WHERE (energyrating = 'C' OR energyrating = 'D')
-AND agent = 'Property Kings'
-AND housetype = 'Semi-detached';`
+    `SELECT *
+    FROM cs130_lab7_property
+    WHERE (energyrating = 'C' OR energyrating = 'D')
+    AND agent = 'Property Kings'
+    AND housetype = 'Semi-detached';`
 
 ### Question 4:
 - 128 rows affected
 <br/>
-`SELECT *
-FROM cs130_lab7_property
-WHERE agent IS NULL OR numbeds IS NULL;`
+    `SELECT *
+    FROM cs130_lab7_property
+    WHERE agent IS NULL OR numbeds IS NULL;`
 
 ### Question 5:
 - 661 rows affected
 <br/>
-`SELECT *
-FROM cs130_lab7_property
-WHERE agent = 'CS130 Estates';`
+    `SELECT *
+    FROM cs130_lab7_property
+    WHERE agent = 'CS130 Estates';`
