@@ -3,6 +3,7 @@
 ### Question 1:
 - 191 rows affected 
 <br />
+
     `SELECT *
     FROM cs130_lab7_property
     WHERE listingdate = '2017-10-13'
@@ -16,6 +17,7 @@
 ### Question 2:
 - 58 rows affected
 <br/>
+
     `SELECT *
     FROM cs130_lab7_property
     WHERE askingprice < 100000
@@ -24,6 +26,7 @@
 ### Question 3:
 - 45 rows affected
 <br/>
+
     `SELECT *
     FROM cs130_lab7_property
     WHERE (energyrating = 'C' OR energyrating = 'D')
@@ -33,6 +36,7 @@
 ### Question 4:
 - 128 rows affected
 <br/>
+
     `SELECT *
     FROM cs130_lab7_property
     WHERE agent IS NULL OR numbeds IS NULL;`
@@ -40,6 +44,7 @@
 ### Question 5:
 - 661 rows affected
 <br/>
+
     `SELECT *
     FROM cs130_lab7_property
     WHERE agent = 'CS130 Estates';`
