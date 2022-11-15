@@ -48,3 +48,12 @@
     SELECT *
     FROM cs130_lab7_property
     WHERE agent = 'CS130 Estates';
+
+### Question 6:
+- 9 rows affected
+<br/>
+
+    SELECT *
+    FROM cs130_lab7_property
+    WHERE length(address) > 20
+    AND address ~* '^.*\d\d\d\d.*road$';
