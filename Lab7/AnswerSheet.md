@@ -57,3 +57,56 @@
     FROM cs130_lab7_property
     WHERE length(address) > 20
     AND address ~* '^.*\d\d\d\d.*road$';
+
+### Question 7:
+- 41 rows affected
+<br/>
+
+    SELECT *
+    FROM lab7_students, lab7_enrolledon
+    WHERE (lab7_students.studentid = lab7_enrolledon.studentid)
+    AND lab7_enrolledon.moduleid = 'CS123';
+
+### Question 8:
+- 158 rows affected
+<br/>
+
+    SELECT lab7_enrolledon.studentid, lab7_enrolledon.moduleid
+    FROM lab7_students, lab7_enrolledon, lab7_modules
+    WHERE (lab7_enrolledon.studentid = lab7_students.studentid)
+    AND (lab7_enrolledon.moduleid = lab7_modules.moduleid)
+    AND lab7_modules.modulesemester = 'Semester 1' AND lab7_students.studentgender = 'Female';
+
+### Question 9:
+- 374 rows affected
+<br/>
+
+    SELECT lab7_enrolledon.moduleid, lab7_enrolledon.studentid
+    FROM lab7_students, lab7_enrolledon
+    WHERE (lab7_students.studentid = lab7_enrolledon.studentid) AND studentemail ~* '.*2017.*';
+
+### Question 10:
+- 254 rows affected
+<br/>
+
+    SELECT lab7_enrolledon.studentid, lab7_enrolledon.moduleid, lab7_students.studentcourse
+    FROM lab7_students, lab7_enrolledon, lab7_modules
+    WHERE (lab7_enrolledon.studentid = lab7_students.studentid)
+    AND (lab7_enrolledon.moduleid = lab7_modules.moduleid)
+    AND lab7_modules.modulecredits >= 10 AND lab7_modules.modulecredits <= 15
+    AND lab7_students.studentcourse NOT LIKE 'BSc%'
+    AND lab7_students.studentcourse NOT LIKE 'BA%';
+
+### Question 11:
+- 35 rows affected
+<br/>
+
+    SELECT * FROM lab7_enrolledon/lab7_modules
+    WHERE moduleid = 'CS2800';
+
+### Question 12:
+- 15 rows affected
+<br/>
+
+    SELECT * FROM lab7_enrolledon/lab7_students
+    WHERE studentid = 'SN09817';
