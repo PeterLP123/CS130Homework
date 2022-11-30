@@ -67,7 +67,7 @@
     WHERE productid = 'SURF1';
 
 ### Question 8:
-- ERROR: cannot truncate a table referenced in a foreign key constraint
+- You cannot truncate the Lab8_Products table without also truncating the Lab8_Sells table also
 
 ### Question 9:
 - ERROR: cannot drop table lab8_products because other objects depend on it
