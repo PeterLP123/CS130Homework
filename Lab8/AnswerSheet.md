@@ -70,4 +70,4 @@
 - You cannot truncate the Lab8_Products table without also truncating the Lab8_Sells table also
 
 ### Question 9:
-- ERROR: cannot drop table lab8_products because other objects depend on it
+- All of the rows in the LAB8_PRODUCTS table and the LAB8_SELLS table are deleted because of referential integrity.
